@@ -219,8 +219,14 @@
       const listaTareas = document.querySelector("#listaTareas");
       const mensajeError = document.querySelector("#mensajeError");
 
-      inputTarea.addEventListener("input",function(){
+      inputTarea.addEventListener("input", function () {
         let texto = inputTarea.value;
+      });
+
+      const previewCard = document.querySelector(".preview");
+
+      selectPrioridad.addEventListener("change",function(){
+        let prioridad = selectPrioridad.value;
       })
     </script>
   </body>

@@ -225,9 +225,17 @@
 
       const previewCard = document.querySelector(".preview");
 
-      selectPrioridad.addEventListener("change",function(){
+      selectPrioridad.addEventListener("change", function () {
         let prioridad = selectPrioridad.value;
-      })
+      });
+
+      function pintarTareas() {
+        listaTareas.innerHTML = "";
+
+        for (let i = 0; i < tareas.length; i++) {
+          const t = tareas[i];
+        }
+      }
     </script>
   </body>
 </html>

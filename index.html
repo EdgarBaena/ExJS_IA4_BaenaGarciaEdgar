@@ -229,15 +229,16 @@
       selectPrioridad.addEventListener("change", function () {
         let prioridad = selectPrioridad.value;
         previewPrioridad.textContent = prioridad;
-      });
+        previewCard.classList.remove("prio-baixa", "prio-mitjana", "prio-alta");
 
-      function pintarTareas() {
-        listaTareas.innerHTML = "";
-
-        for (let i = 0; i < tareas.length; i++) {
-          const t = tareas[i];
+        if (prioridad == "baja") {
+          previewCard.classList.add("prio-baixa");
+        } else if (prioridad == "media") {
+          previewCard.classList.add("prio-mitjana");
+        } else if (prioridad == "alta") {
+          previewCard.classList.add("prio-alta");
         }
-      }
+      });
     </script>
   </body>
 </html>

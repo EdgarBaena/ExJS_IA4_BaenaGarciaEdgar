@@ -221,12 +221,14 @@
 
       inputTarea.addEventListener("input", function () {
         let texto = inputTarea.value;
+        previewTexto.textContent = texto;
       });
 
       const previewCard = document.querySelector(".preview");
 
       selectPrioridad.addEventListener("change", function () {
         let prioridad = selectPrioridad.value;
+        previewPrioridad.textContent = prioridad;
       });
 
       function pintarTareas() {
